@@ -1,6 +1,6 @@
 {
     "build": {
-        "dockerfile: "DockerFile"
+        "dockerfile": "Dockerfile"
     },
 
     "updateContentCommand": "npm install",
@@ -13,6 +13,15 @@
         "3000": {
             "label": "React App",
             "onAutoForward": "openPreview"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["esbenp.prettier-vscode"],
+            "settings": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true
+            }
         }
     }
 }
